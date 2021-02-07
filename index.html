@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+        <div class="container-fluid text-center">
+          <a class="navbar-brand text-warning title">Hungry Monster</a>
+      </nav> 
+    </header>
+  
+    <section >
+        <form class="col-lg-6 mx-auto my-5">
+          <div class="input-group">
+              <input id="meal-input" type="text" class="form-control" placeholder="Search Your Meal">
+              
+              <div class="input-group-append">
+                  <button id="search-btn" class="btn btn-primary"  type="button" onclick="handleSearch(document.getElementById('meal-input').value)">Search</button>
+              </div>
+
+          </div>
+        </form>
+    </section>
+
+        
+    <section id="mealDetails" class="mb-5">
+                  <div class="card mx-auto" style="width: 50rem;">
+                      <img id="meal-img" src="food.jpg" class="card-img-top custom-card-img" >
+                        <div class="card-body">
+                            <h2  id="meal-title" class="card-title text-center text-uppercase">Meal Name</h2>
+                            <br>
+                            <h5 class="card-text text-center text-uppercase text-decoration-underline">Ingredients</h5>
+                            <br>
+                              <div id="ingredients">
+
+                              </div>
+                            <br>
+                        </div>
+                  </div>   
+                    
+    </section>
+        
+    <section>
+              <div id="mealResult" class="row row-cols-1 row-cols-md-6 g-4">
+
+              </div>
+    </section>
+
+  </div>
+
+
+    
+    <section>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="script.js"></script>
+    </section>
+    
+</body>
+</html>

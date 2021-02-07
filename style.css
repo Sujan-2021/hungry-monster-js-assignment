@@ -1,0 +1,33 @@
+body{
+    background-color: #2d2013;
+    margin: 50px 100px;
+}
+h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+p {
+    text-align: center;
+    padding: 5px;
+}
+#search-btn {
+    background-color: tomato;
+    height: 50px;
+    width: 100px;
+    border-radius: 0px 10px 10px 0;
+    border: none;
+}
+#meal{
+    border: none;
+    border-radius: 15px;
+}
+#meal img{
+    border-radius: 15px; 
+}
+#mealDetails{
+    display: none;
+}
+.custom-card-img {
+    border-radius: 15px; 
+    height: 500px;
+}
+
