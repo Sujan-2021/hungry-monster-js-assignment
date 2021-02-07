@@ -1,3 +1,4 @@
+
 const doFetchRequest = (url, generateCard) => {
     fetch(url)
         .then(res => res.json())
